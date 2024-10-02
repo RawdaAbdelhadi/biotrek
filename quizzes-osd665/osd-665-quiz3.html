@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">    <title>Youtube</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body>
+    <div class="header sticky-top ">
+      <nav class="container">
+        <div class="navbar py-4 d-flex justify-content-between align-items-center ">
+          <a href="../index.html">
+            <div class="home ">
+                <img src="../logo.png" class="logo" alt="Logo" />
+            </div>
+          </a>
+          
+          <div class="nav">
+            <ul class="nav_links">
+              <li><a href="#" class="nav_btn">OSD665</a></li>
+              <li><a href="../osd-379.html" class="nav_btn">OSD379</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+    </div>
+    
+    
+      <section class="main-osd p-5" >
+        <div class="container">
+          
+            <div class="left-side text-center p-5 ">
+              <h1 class="fs-1 mb-3"> The Rodent Research-23  <span class="span">OSD-665</span> </h1>
+              <p class="fs-5 mb-3">Biological experiments conducted in space offer invaluable insights into how life adapts to extraterrestrial environments. However, the complexity of these experiments often hinders their accessibility to a broader scientific community</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <div class="header-quiz p-5 m-5"  >
+        <div class="container">
+            <h2 class="text-center fs-2 blue-text mb-5" > Simple Steps to Achieve goal</h2>
+            <div id="ph">
+              <h3 class="fs-4 mt-2 pt-4  orange-text  fw-bold text-decoration-underline">Read the passage before starting the questions</h3>
+            <p class="fs-5 lh-3 ">Sending mice to space: Scientists used 20 mice aged 16 to 17 weeks. The mice were sent to the ISS aboard the SpaceX-21 mission, living in a microgravity environment for 38 days in a specially designed rodent habitat.
+
+              Returning mice to Earth: On January 13, 2021, the mice were returned alive to Earth, landing in the ocean. They were then transported to the Kennedy Space Center and later to Texas A&M University for study.
+              
+              Post-return study of mice: The scientists analyzed tissue samples from the mice after humanely euthanizing them to collect the necessary samples. The mice were euthanized between January 14 and 20, 2021.
+              
+              Dividing the mice into three groups:
+              
+              Flight Group: Mice that traveled to space.
+              Habitat Ground Control Group: Mice that remained on Earth but in space-simulated conditions.
+              Vivarium Ground Control Group: Mice that lived in completely normal conditions on Earth.</p>
+            <h4 class="fs-4 blue-text ">Quiz-3</h4> 
+            </div>
+            <div class="quiz ">
+                
+                <form id="quizForm" class="fs-4">
+                  <div class="question my-3">
+                      <label class="fs-4">1. How old were the mice used in the Rodent Research-23 experiment?<br>
+                        <input type="radio" name="q1" value="10-12 weeks"> 10-12 weeks<br>
+                        <input type="radio" name="q1" value="16-17 weeks"> 16-17 weeks<br>
+                        <input type="radio" name="q1" value="20-22 weeks"> 20-22 weeks
+                      </label>
+                  </div>
+          
+                  <div class="question my-3">
+                      <label>2. On which mission were the mice sent to space?<br>
+                        <input type="radio" name="q2" value="SpaceX-19"> SpaceX-19<br>
+                        <input type="radio" name="q2" value="SpaceX-20"> SpaceX-20<br>
+                        <input type="radio" name="q2" value="SpaceX-21"> SpaceX-21
+                      </label>
+                  </div>
+          
+                  <div class="question  my-3">
+                      <label>3. How many days did the mice spend in space?<br>
+                        <input type="radio" name="q3" value="30 days"> 30 days<br>
+                        <input type="radio" name="q3" value="38 days"> 38 days<br>
+                        <input type="radio" name="q3" value="45 days"> 45 days
+                      </label>
+                  </div>
+          
+                  <div class="question my-3">
+                      <label>4. Where were the mice sent after they returned to Earth?<br>
+                        <input type="radio" name="q4" value="Kennedy Space Center and Texas A&M University"> Kennedy Space Center and Texas A&M University<br>
+                        <input type="radio" name="q4" value="NASA Headquarters"> NASA Headquarters<br>
+                        <input type="radio" name="q4" value="Johnson Space Center"> Johnson Space Center
+                      </label>
+                  </div>
+          
+                  <div class="question my-3">
+                      <label>5. How many groups were the mice divided into for the experiment?<br>
+                          <input type="radio" name="q5" value="2"> 2<br>
+                          <input type="radio" name="q5" value="3"> 3<br>
+                          <input type="radio" name="q5" value="4"> 4
+                      </label>
+                  </div>
+          
+                  <button type="button" class="button" onclick="checkAnswers()">Submit Answers</button>
+              </form>
+              <div id="resultMessage" class="hidden  text-center">
+                <h2 style="color: #B49F1A;">Congratulations!</h2>
+                <p>You have passed the quiz. Click <a href="osd-665-quiz4.html" class="text-decoration-none">here</a> to proceed to the next page.</p>
+            </div>
+        
+            <div id="failMessage" class="hidden text-center">
+                <h2>Try Again</h2>
+                <p>You need to answer at least 3 questions correctly. Please try again!</p>
+            </div>
+         
+            </div>
+          </div>
+          
+      </div>
+      
+   
+
+
+      <footer class="footer">
+        <div class="container">
+          <div class="home ">
+            <img src="../logo.png" class="logo" alt="Logo" />
+          </div>
+        </div>
+        
+      </footer>
+
+
+   
+      
+
+  
+
+    <script src="../script.js"></script>
+  </body>
+</html>
